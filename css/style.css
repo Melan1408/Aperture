@@ -71,19 +71,21 @@ header ul li:last-of-type a{
 }
 
 .mainContainer{
-    padding-top: 466px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     padding-bottom: 71px;
     background-size: cover;
-    height: 100vh;
+    min-height: 716px;
     background-image: linear-gradient(360deg, #000000 18.78%, rgba(0, 0, 0, 0) 98.53%), url('../images/Banner.jpg');
     position: relative;
 }
 
 .mainContainerBlock{
     max-width: 600px;
-    margin: auto;
 }
-h3{
+
+.mainContainer h3{
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -105,7 +107,7 @@ h1{
     margin-bottom: 18px;
 }
 
-p{
+.mainContainer p{
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -155,12 +157,84 @@ p{
     width: 10px;
     margin-right: 5px;
 }
-.ClientsContainer{
+
+.japanBannerContainer{
+    display: flex;
+    justify-content: right;
+    align-items:center;
+    background-size: cover;
+    min-height: 600px;
+    background-image:url('../images/JapanBanner.jpg');
+    position: relative;
+}
+
+.japanBannerContainerBlock{
+    max-width: 298px;
+    margin-right: 62px;
+}
+
+.japanBannerContainer h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.japanBannerContainer p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #C0C0C0;
+}
+
+.costaRicaBannerContainer{
+    display: flex;
+    justify-content: right;
+    align-items:center;
+    background-size: cover;
+    min-height: 600px;
+    background-image:url('../images/CostaRicaBanner.jpg');
+    position: relative;
+}
+
+.costaRicaBannerContainerBlock{
+    max-width: 273px;
+    margin-right: 87px;
+}
+
+.costaRicaBannerContainer h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.costaRicaBannerContainer p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #C0C0C0;
+}
+
+
+.clientsContainer{
     padding-top: 113px;
     padding-bottom: 140px;
     background: #000000;
 }
 
+.clientsContainerBlock{
+    max-width: 600px;
+    margin: auto;
+}
 h2{
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
@@ -171,16 +245,106 @@ h2{
     margin-bottom: 15px;
 }
 
-.ClientsContainer .mainContainerBlock p {
+.clientsContainer p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
     font-size: 24px;
     line-height: 30px;
+    text-align: center;
+    color: #C0C0C0;
     margin-bottom: 82px;
 }
 
-.ClientsContainerBlock{
+.clientsContainerBannersBlock{
     margin: auto;
     max-width: 1168px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.nepalBannerContainer{
+    display: flex;
+    justify-content: right;
+    align-items:center;
+    background-size: cover;
+    min-height: 600px;
+    background-image:url('../images/NepalBanner.jpg');
+    position: relative;
+}
+
+.nepalBannerContainerBlock{
+    max-width: 254px;
+    margin-right: 106px;
+}
+
+.nepalBannerContainerBlock h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.nepalBannerContainerBlock p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #C0C0C0;
+    max-width: 241px;
+}
+
+.getInTouchContainer{
+    padding-top: 113px;
+    padding-bottom: 108px;
+    background: #000000;
+}
+
+.getInTouchContainerBlock{
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.getInTouchContainer p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color: #C0C0C0;
+    margin-bottom: 31px;
+}
+
+.getInTouchContainer a {
+    padding: 5px 10px 5px 4px;
+    background: #FFFFFF;
+    border-radius: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    color: #000000;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.getInTouchContainer a:before{
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 15px;
+    background-color: black;
+    margin-right: 6px;
+}
+
+.getInTouchContainer a:hover{
+    transform: scale(1.2);
 }
