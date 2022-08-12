@@ -19,6 +19,10 @@ a{
     text-decoration:none;
 }
 
+ul{
+    list-style: none;
+}
+
 .menuContainer{
     max-width: 1200px;
     margin: auto;
@@ -156,6 +160,107 @@ h1{
     background-image: url("../images/BotInfoImg4.svg");
     width: 10px;
     margin-right: 5px;
+}
+
+.whatWeDo{
+    padding-top: 112px;
+    padding-bottom: 100px;
+    background-color: black;
+}
+
+.whatWeDo .container{
+    max-width: 1168px;
+    margin: auto;
+}
+
+.whatWeDo p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 30px;
+    text-align: center;
+    color: #C0C0C0;
+    margin-bottom: 42px;
+}
+
+.whatWeDo .d-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.whatWeDo .item{
+    max-width: 576px;
+    max-height: 576px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.whatWeDo .item img{
+    display: block;
+    width: 100%;
+}
+
+.whatWeDo .item .description{
+    position: absolute;
+    padding: 30px;
+    width: 100%;
+    bottom: 0;
+}
+
+.whatWeDo .item .description h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.whatWeDo .item .description p{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #C0C0C0;
+    text-align: left;
+    margin-bottom: 17px;
+}
+
+.whatWeDo .item .description a {
+    padding: 5px 10px 5px 4px;
+    background: #FFFFFF;
+    border-radius: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    color: #000000;
+    transition: 0.3s;
+    max-width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+.whatWeDo .item .description a:before{
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 15px;
+    background-color: black;
+    margin-right: 6px;
+}
+
+.whatWeDo .item .description a:hover{
+    transform: scale(1.2);
 }
 
 .japanBannerContainer{
@@ -347,4 +452,165 @@ h2{
 
 .getInTouchContainer a:hover{
     transform: scale(1.2);
+}
+
+footer{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: black;
+}
+
+footer .container{
+    max-width: 1168px;
+    margin: auto;
+}
+
+footer .container .d-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .container .d-flex:first-of-type{
+    padding-bottom: 36px;
+}
+
+footer .container .logo{
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+footer .container p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #C0C0C0;
+}
+
+footer .d-flex .d-flex .ulContainer{
+    min-width: 220px;
+}
+footer .d-flex .d-flex .ulContainer:first-of-type{
+    margin-right: 10px;
+}
+
+footer .d-flex .d-flex ul li:first-of-type{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #C0C0C0;
+}
+
+footer .d-flex .d-flex ul li{
+    margin-bottom: 10px;
+}
+
+footer .d-flex .d-flex ul li a{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+footer .d-flex:nth-child(2){
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-color: white;
+    border-style:solid;
+    padding-bottom: 36px;
+    padding-top: 36px;
+}
+
+footer .d-flex .d-flex{
+    border: none;
+    padding: 0;
+}
+
+footer .d-flex h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+footer .d-flex p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #C0C0C0;
+}
+
+footer .d-flex:nth-child(2) .formContainer{
+    max-width: 458px;
+    width: 100%;
+
+}
+
+footer .d-flex:nth-child(2) form{
+    background: #F9FAFB;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    padding: 11px 6px;
+    display: flex;
+}
+
+footer .d-flex:nth-child(2) form button{
+    background: #000000;
+    border-radius: 11px;
+    width: 63px;
+    height: 30px;
+    transition: 0.3s;
+}
+
+footer .d-flex:nth-child(2) form button:hover{
+    transform: scale(1.2);
+}
+
+footer .d-flex:nth-child(2) form input{
+    background: transparent;
+    border:none;
+    outline: none;
+    width: 100%;
+    margin-right: 10px;
+}
+
+footer .d-flex:nth-child(3){
+    padding-top: 56px;
+}
+
+footer .d-flex:nth-child(3) p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #C0C0C0;
+}
+
+footer .d-flex:nth-child(3) ul{
+    display: flex;
+    list-style: none;
+}
+
+footer .d-flex:nth-child(3) ul li:first-of-type{
+    margin-right: 20px;
+}
+
+footer .d-flex:nth-child(3) ul li:nth-child(2){
+    margin-right: 26px;
+}
+
+footer .d-flex:nth-child(3) div:first-of-type{
+    max-width: 695px;
 }
