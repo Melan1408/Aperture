@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
@@ -19,20 +21,25 @@
             <img src="images/Logo.svg" alt="logo;">
         </a>
         <nav>
-            <ul>
-                <li>
+            <div class="menu-btn">
+                <div class="line line__1"></div>
+                <div class="line line__2"></div>
+                <div class="line line__3"></div>
+            </div>
+            <ul class="nav-links">
+                <li class="link">
                     <a href="#">Business areas</a>
                 </li>
-                <li>
+                <li class="link">
                     <a href="#">Featured images</a>
                 </li>
-                <li>
+                <li class="link">
                     <a href="#">Gear cage</a>
                 </li>
-                <li>
+                <li class="link">
                     <a href="#">Contact</a>
                 </li>
-                <li>
+                <li class="link">
                     <a href="#">Get template</a>
                 </li>
             </ul>
@@ -130,7 +137,7 @@
         <h2>Past clients</h2>
         <p>Trusted by your favourite companies</p>
     </div>
-    <div class="clientsContainerBannersBlock">
+    <div class="clientsContainerBannersBlock owl-carousel">
         <a href="#">
             <img src="images/HilleHayesBanner.svg" alt="HilleHayesBanner;">
         </a>
@@ -256,5 +263,9 @@
         </div>
     </div>
 </footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>
