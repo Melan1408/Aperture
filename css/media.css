@@ -295,6 +295,14 @@
     }
 
 }
+
+@media screen and (max-width:393px ) {
+
+    nav .nav-links li:last-of-type{
+        margin-left: 124px;
+    }
+
+}
 @media screen and (max-width:390px ) {
 
     nav .nav-links li:last-of-type{
