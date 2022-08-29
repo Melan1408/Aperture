@@ -35,7 +35,7 @@
     }
     nav .nav-links li:last-of-type{
         width: fit-content;
-        margin-left: 125px;
+        margin: auto;
     }
 
     nav a{
@@ -288,26 +288,8 @@
     }
 }
 
-@media screen and (max-width:414px ) {
-
-    nav .nav-links li:last-of-type{
-        margin-left: 134px;
-    }
-
-}
-
-@media screen and (max-width:393px ) {
-
-    nav .nav-links li:last-of-type{
-        margin-left: 124px;
-    }
-
-}
 @media screen and (max-width:390px ) {
 
-    nav .nav-links li:last-of-type{
-        margin-left: 122px;
-    }
 
     .japanBannerContainer{
         min-height: 450px;
@@ -337,20 +319,7 @@
     }
 }
 
-@media screen and (max-width:375px ) {
-
-    nav .nav-links li:last-of-type{
-        margin-left: 114px;
-    }
-
-}
-
 @media screen and (max-width:360px ) {
-
-
-    nav .nav-links li:last-of-type{
-        margin-left: 106px;
-    }
 
     .japanBannerContainerBlock{
         margin-right: 22px;
@@ -374,10 +343,6 @@
 }
 
 @media screen and (max-width:320px ) {
-
-    nav .nav-links li:last-of-type{
-        margin-left: 86px;
-    }
 
     nav .menu-btn {
         top: 12px;
@@ -507,10 +472,6 @@
 }
 
 @media screen and (max-width:280px ) {
-
-    nav .nav-links li:last-of-type{
-        margin-left: 64px;
-    }
 
     nav .menu-btn {
        left:-20%;
