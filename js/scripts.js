@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
     $('.owl-carousel').owlCarousel({
         loop:true,
         margin:0,
@@ -10,8 +9,11 @@ $(document).ready(function(){
             0:{
                 items:1
             },
+            520:{
+                items:3
+            },
 
-            1000:{
+            820:{
                 items:5
             }
         }

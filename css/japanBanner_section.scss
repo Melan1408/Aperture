@@ -1,0 +1,71 @@
+@import "mixin";
+
+.japanBannerContainer {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  background-size: cover;
+  min-height: 600px;
+  background-image: url('../images/JapanBanner.jpg');
+  position: relative;
+  @include max-screen(468px){
+    justify-content: center;
+  }
+  @include max-screen(390px){
+    min-height: 450px;
+  }
+  @include max-screen(390px){
+    margin-right: 0px;
+  }
+  .japanBannerContainerBlock {
+    max-width: 298px;
+    margin-right: 62px;
+    @include max-screen(390px){
+      margin-right: 32px;
+      max-width: 260px;
+    }
+    @include max-screen(360px){
+      margin-right: 22px;
+    }
+    @include max-screen(280px){
+      margin-right: 0px;
+    }
+    h3 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      @include max-screen(428px){
+        font-size: 12px;
+      }
+      @include max-screen(320px){
+        font-size: 10px;
+      }
+    }
+
+    p {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: #C0C0C0;
+      @include max-screen(428px){
+        font-size: 12px;
+      }
+      @include max-screen(320px){
+        font-size: 10px;
+      }
+    }
+  }
+  .japanBannerContainerBotInfo{
+    @extend .BotInfo;
+  }
+}
+
+
+
+
+

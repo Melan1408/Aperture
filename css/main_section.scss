@@ -1,0 +1,61 @@
+@import "mixin";
+
+.mainContainer{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 71px;
+  background-size: cover;
+  min-height: 716px;
+  background-image: linear-gradient(360deg, #000000 18.78%, rgba(0, 0, 0, 0) 98.53%), url('../images/Banner.jpg');
+  position: relative;
+  @include max-screen(468px){
+    min-height: 500px;
+  }
+  .mainContainerBlock{
+    max-width: 600px;
+    h3{
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #C0C0C0;
+      margin-bottom: 1px;
+      @include max-screen(428px){
+        font-size: 12px;
+      }
+      @include max-screen(320px){
+        font-size: 10px;
+      }
+    }
+    p{
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+      color: #C0C0C0;
+      @include max-screen(428px){
+        font-size: 12px;
+      }
+      @include max-screen(320px){
+        font-size: 10px;
+      }
+    }
+    @include max-screen(428px){
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+  .mainContainerBotInfo{
+    @extend .BotInfo;
+    @include max-screen(320px){
+      right: 18px;
+    }
+  }
+}
+
+

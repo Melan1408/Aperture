@@ -1,0 +1,241 @@
+@import "mixin";
+
+footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: black;
+  @include max-screen(1024px){
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @include max-screen(428px){
+    padding: 50px 20px 50px 15px;
+  }
+  .container {
+    max-width: 1168px;
+    margin: auto;
+
+    .d-flex {
+      display: flex;
+      justify-content: space-between;
+      @include max-screen(428px){
+        flex-direction: column;
+        align-items: center;
+      }
+
+      &:first-of-type {
+        padding-bottom: 36px;
+        @include max-screen(428px){
+          padding-bottom: 24px;
+        }
+        div{
+          &:first-of-type{
+            @include max-screen(768px){
+              max-width: 200px;
+            }
+            @include max-screen(468px){
+              margin-bottom: 15px;
+            }
+          }
+        }
+        img{
+          @include max-screen(768px){
+            max-width: 80px;
+          }
+        }
+      }
+
+      .logo {
+        margin-bottom: 20px;
+        margin-left: 0px;
+        margin-top: 0px;
+        @include max-screen(468px){
+          margin-bottom: 10px;
+        }
+      }
+
+      p {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+        color: #C0C0C0;
+      }
+
+      .d-flex {
+        border: none !important;
+        padding: 0 !important;
+
+        .ulContainer {
+          min-width: 220px;
+          @include max-screen(768px){
+            min-width: 200px;
+          }
+          &:first-of-type {
+            margin-right: 10px;
+            @include max-screen(768px){
+              margin-right: 0px;
+            }
+          }
+
+          li {
+            margin-bottom: 10px;
+
+            &:first-of-type {
+              font-family: 'Poppins', sans-serif;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 20px;
+              letter-spacing: 2px;
+              text-transform: uppercase;
+              color: #C0C0C0;
+            }
+
+            a {
+              font-family: 'Poppins', sans-serif;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 20px;
+              color: #FFFFFF;
+            }
+          }
+        }
+        div{
+          &:last-of-type{
+            @include max-screen(468px){
+              margin-bottom: 0px;
+            }
+          }
+        }
+      }
+
+      &:nth-child(2) {
+        border-top-width: 2px;
+        border-bottom-width: 2px;
+        border-left-width: 0px;
+        border-right-width: 0px;
+        border-color: white;
+        border-style: solid;
+        padding-bottom: 36px;
+        padding-top: 36px;
+
+        .formContainer{
+          @include max-screen(768px){
+            max-width: 300px;
+          }
+        }
+      }
+
+      h3 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+        @include max-screen(468px){
+          font-size: 12px;
+          margin-bottom: 10px;
+        }
+        @include max-screen(320px){
+          font-size: 10px;
+        }
+      }
+
+      p {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+        color: #C0C0C0;
+        @include max-screen(468px){
+          font-size: 11px;
+          margin-bottom: 10px;
+        }
+        @include max-screen(320px){
+          font-size: 9px;
+        }
+      }
+
+      &:nth-child(2) {
+        .formContainer {
+          max-width: 458px;
+          width: 100%;
+
+          form {
+            background: #F9FAFB;
+            border: 1px solid #E5E7EB;
+            border-radius: 12px;
+            padding: 11px 6px;
+            display: flex;
+
+            button {
+              background: #000000;
+              border-radius: 11px;
+              width: 63px;
+              height: 30px;
+              transition: 0.3s;
+
+              &:hover {
+                transform: scale(1.2);
+              }
+            }
+
+            input {
+              background: transparent;
+              border: none;
+              outline: none;
+              width: 100%;
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+
+      &:nth-child(3) {
+        padding-top: 56px;
+        @include max-screen(468px){
+          padding-top: 36px;
+        }
+        p {
+          font-family: 'Poppins', sans-serif;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          color: #C0C0C0;
+          @include max-screen(468px){
+            font-size: 12px;
+            margin-bottom: 15px;
+          }
+          @include max-screen(320px){
+            font-size: 10px;
+          }
+        }
+
+        ul {
+          display: flex;
+          list-style: none;
+
+          li {
+            &:first-of-type {
+              margin-right: 20px;
+            }
+
+            &:nth-child(2) {
+              margin-right: 26px;
+            }
+          }
+        }
+
+        div {
+          &:first-of-type {
+            max-width: 695px;
+          }
+        }
+      }
+    }
+  }
+}
+

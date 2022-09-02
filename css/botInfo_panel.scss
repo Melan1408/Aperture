@@ -1,0 +1,50 @@
+@import "mixin";
+
+.BotInfo{
+  position: absolute;
+  bottom: 41px;
+  right: 40px;
+  list-style: none;
+  @include max-screen(360px){
+    right: 36px;
+  }
+  @include max-screen(320px){
+    bottom: 20px;
+  }
+  li{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: #FFFFFF;
+    display: inline-flex;
+    margin-left:16px;
+    @include max-screen(320px){
+      margin-left: 5px;
+    }
+    @include max-screen(280px){
+      margin-left: 3px;
+    }
+    &:before{
+      content: "";
+      background-image: url("../images/BotInfoImg1.svg");
+      width: 16px;
+      height: 16px;
+      display: block;
+      margin-right: 6px;
+    }
+    &:nth-child(2):before{
+      background-image: url("../images/BotInfoImg2.svg");
+    }
+    &:nth-child(3):before{
+      background-image: url("../images/BotInfoImg3.svg");
+      width: 32px;
+      margin-right: 7px;
+    }
+    &:last-of-type:before{
+      background-image: url("../images/BotInfoImg4.svg");
+      width: 10px;
+      margin-right: 5px;
+    }
+  }
+}

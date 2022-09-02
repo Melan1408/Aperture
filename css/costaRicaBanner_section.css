@@ -1,0 +1,27 @@
+.costaRicaBannerContainer {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  background-size: cover;
+  min-height: 600px;
+  background-image: url("../images/CostaRicaBanner.jpg");
+  position: relative; }
+  .costaRicaBannerContainer .costaRicaBannerContainerBlock {
+    max-width: 273px;
+    margin-right: 87px; }
+    .costaRicaBannerContainer .costaRicaBannerContainerBlock h3 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #FFFFFF; }
+    .costaRicaBannerContainer .costaRicaBannerContainerBlock p {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: #C0C0C0; }
+
+/*# sourceMappingURL=costaRicaBanner_section.css.map */

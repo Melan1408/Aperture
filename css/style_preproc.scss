@@ -1,0 +1,72 @@
+@import "mixin";
+@import "botInfo_panel";
+@import "header";
+@import "main_section";
+@import "whatWeDo_section";
+@import "japanBanner_section";
+@import "costaRicaBanner_section";
+@import "clients_section";
+@import "nepalBanner_section";
+@import "getInTouch_section";
+@import "footer";
+@import "mobilemenu";
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a{
+  display: inline-block;
+  text-decoration:none;
+}
+
+img{
+  max-width: 100%;
+}
+
+ul{
+  list-style: none;
+}
+
+h1{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 59px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 18px;
+  @include max-screen(428px){
+    font-size: 40px;
+  }
+  @include max-screen(320px){
+    font-size: 30px;
+  }
+}
+
+h2{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 42px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+  @include max-screen(428px){
+    font-size: 34px;
+  }
+  @include max-screen(320px){
+    font-size: 26px;
+  }
+}
+
+.owl-stage{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+

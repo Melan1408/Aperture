@@ -1,0 +1,27 @@
+.japanBannerContainer {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  background-size: cover;
+  min-height: 600px;
+  background-image: url("../images/JapanBanner.jpg");
+  position: relative; }
+  .japanBannerContainer .japanBannerContainerBlock {
+    max-width: 298px;
+    margin-right: 62px; }
+    .japanBannerContainer .japanBannerContainerBlock h3 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #FFFFFF; }
+    .japanBannerContainer .japanBannerContainerBlock p {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: #C0C0C0; }
+
+/*# sourceMappingURL=japanBanner_section.css.map */
